@@ -7,26 +7,26 @@
     <title>Code Commerce- YT </title>  
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
     </head>  
-    <style> 
+ <style> 
     div{
     margin:0; 
-    padding: 0;  
-    box-sizing: border-box; 
+    padding:0;  
+    box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }</style> 
 <style>.sidebar { 
     position:absolute; 
     top:0; 
     left:0; 
-    height: 100vh; 
-    width: 80px;
+    height: 200vh; 
+    width: 100px;
     background-color: brown;
     padding: .4rem .8rem; 
     transition: all 0.5s ease;
 }</style>
 <style> .sidebar.active ~ .main-content { 
     left:250px; 
-    width: calc(100%-250px); 
+    width: calc(100%-300px); 
 }</style> 
 <style> .sidebar.active {
     width: 250px;
@@ -55,13 +55,100 @@
     } </style>
 <style> .sidebar.active .top .logo { 
     opacity: 1;}
-    </style>
+    </style> 
+<style> .top .logo i { 
+    font-size:2 rem; 
+    margin-right: 5px;
+}</style> 
+<style> .user p {
+    color: white; 
+    opacity: 1; 
+    margin-left: 1 rem; 
+}</style> 
+<style> .user  {
+    display: flex;
+    align-items: center; 
+    margin: 1rem 0;
+}</style> 
+<style> .bold  {
+    font-weight:600;
+}</style> 
+<style> .sidebar p {
+    opacity: 0;
+}</style> 
+<style> .sidebar.active p {
+    opacity: 1;
+}</style> 
+<style> .sidebar ul li {
+    position:relative; 
+    list-style: none; 
+    height: 50px;
+    width: 90%; 
+    margin: 0.8rem auto; 
+    line-height: 50px;  
+}</style> 
+<style> .sidebar ul li a {
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    border-radius: 0.8rem; 
+}</style> 
+<style> .sidebar ul li a:hover {
+    background-color: white; 
+    color:brown;
+}</style> 
+<style> .sidebar ul li a i {
+    min-width: 50px; 
+    text-align: left; 
+    height: 50px; 
+    border-radius: 12px; 
+    line-height: 50px;
+}</style> 
+<style> .sidebar .nav-item {
+    opacity: 0;
+}</style> 
+<style> .sidebar.active .nav-item {
+    opacity: 1;
+}</style>  
+<style> .sidebar ul li .tooltip{
+    position: absolute; 
+    left: 125px; 
+    top: 50%; 
+    transform: translate(-70%, -70%); 
+    box-shadow: 0 0.5rem 0.8rem rgba(0,0,0,0.2); 
+    border-radius: .6rem; 
+    padding: .4rem 1.2rem; 
+    line-height: 1.8rem; 
+    z-index: 20; 
+    opacity:0;
+}</style> 
+<style> .sidebar ul li:hover .tooltip{  
+    opacity:1;
+}</style> 
+<style> .sidebar.active ul li .tooltip{ 
+    display:none; 
+} </style> 
+<style> .main-content { 
+    position: relative; 
+    background-color: lightsteelblue; 
+    min-height: 535vh; 
+    top:0;
+    left: 100px;  
+    transition: all 0.5s ease; 
+    width: calc(100%-100px); 
+    padding: 1rem; 
+    height: 45px;
+    color: brown; 
+    text-align: center; 
+    font-family:serif;
+}</style>
     <body> 
         <div class="sidebar"> 
             <div class="top"> 
                 <div class="logo"> 
                     <i class="bx bxl-codepen"></i> 
-                    <span>CodeCommerce</span>
+                    <span>Vincent's Menu</span>
                 </div> 
                 <i class="bx bx-menu" id="btn"></i> 
                 <style>.user {
@@ -79,28 +166,28 @@
     </div>
          <ul>  
             <li>
-                <a href="#">
+                <a href="#Call">
                 <i class="bx bxs-phone"></i> 
                 <span class="nav-item">Call</span> 
                 </a> 
                 <span class="tooltip">Call</span>
             </li> 
             <li>
-                <a href="#">
+                <a href="#About">
                 <i class="bx bxs-face"></i> 
                 <span class="nav-item">About</span> 
                 </a> 
                 <span class="tooltip">About</span>
             </li> 
             <li>
-                <a href="#">
+                <a href="#Email">
                 <i class="bx bxs-envelope"></i> 
                 <span class="nav-item">Email</span> 
                 </a> 
                 <span class="tooltip">Email</span>
             </li> 
             <li>
-                <a href="#">
+                <a href="#Works">
                 <i class="bx bxs-palette"></i> 
                 <span class="nav-item">Works</span> 
                 </a> 
@@ -109,9 +196,131 @@
          </ul>   
     </div>
 <div class="main-content">
-    <div class="container"> 
-        <h1>Code Commerce</h1>
-    </div>
+    <div id="container" class="container"> 
+        <img src= "https://i.pinimg.com/564x/d9/79/06/d9790628a4d1f2cb694ccb11ac84d5cd.jpg" 
+            alt= "You are seeing an artwork of Van Gogh in an almond tree." 
+            title= "Van Gogh in a Tree" 
+            width= "1200" 
+            height= "250"  
+              /> 
+        <h1>Van Gogh Headquarters</h1>  
+        <img src= "https://i.pinimg.com/564x/d9/79/06/d9790628a4d1f2cb694ccb11ac84d5cd.jpg" 
+        alt= "You are seeing an artwork of Van Gogh in an almond tree." 
+        title= "Van Gogh in a Tree" 
+        width= "1200" 
+        height= "250"  
+          /> 
+    </div> 
+    <main> 
+    <br>
+        <div id="Call" class="Call"> <h1> Call</h1>  
+            <img src= "https://i.pinimg.com/564x/a2/ce/ca/a2cecab9fa30a373217836f2a9341328.jpg" 
+            alt= "You are seeing an artwork of Van Gogh in an almond tree." 
+            title= "Van Gogh in a Tree" 
+            width= "300" 
+            height= "350"  
+              /> 
+         <h3> Hi!  
+            <br>If you want to get a contact with Vincent, call his ghost today! </h3> 
+            </div> 
+            <br><br><br><br><br>
+    
+        <div id="About" class="About"> <h1> Fun Facts about Van Gogh</h1> 
+            <img src= "https://i.pinimg.com/564x/e4/7d/bc/e47dbc4e733b3dd0a00bec61d8d93814.jpg" 
+            alt= "You are seeing an illustration of Van Gogh painting." 
+            title= "Van Gogh Painting a Picture" 
+            width= "300" 
+            height= "350" 
+            />
+         <h3> Here are some fun facts about Van Gogh's life:</h3> 
+         <p> 1. Van Gogh cut off his ear during a heated fued with another artist named Paul Gauguin.</p> 
+         <p> 2. He reportedly lived off of bread, coffee, and tobacco.</p> 
+         <p> 3. Finally, he reportedly made a new artwork every 36 hours.</p>  
+         </div>
+         <br><br><br><br><br>
+    
+        <div id="Email" class="Email"> <h1> Email </h1> 
+            <img src= "https://i.pinimg.com/564x/95/be/b9/95beb9338f8f41502040d5b4b35448da.jpg" 
+            alt= "You are seeing an original letter from Van Gogh to his brother Theo." 
+            title= "Van Gogh Letter" 
+            width= "350" 
+            height= "400"  
+            />  
+         <p>Please enter your email address to keep updated on our newsletter.</p>
+        <input type="email" name="email" />
+        <input type="submit" value="Submit" />  <br><br>
+    
+        <p>Check the box if you think we should do a Van Gogh print giveaway:</p>
+        <input type="checkbox" name="service" value="lab" /> Yes! Count me in!</p> <br><br>
+    
+        <p>Comments or Concerns:<br>
+        <textarea name="comments" id="test-textarea"> Leave them here.:)</textarea></p>  <br><br>
+    
+        <p>Enter your first and last name to be enrolled in our Van Gogh painting class:</p>
+        <input type="text" name="email" />
+        <input type="submit" name="subscribe" value="Submit" /> 
+        </div> 
+        <div id="Works" class="Works"> <h1> Works</h1>
+            <h3> Here is one of his most famous paintings titled "First Steps". </h3> 
+            <img src= "https://i.pinimg.com/564x/60/10/c6/6010c68226c21e559a83d8fb4fbcb89e.jpg" 
+            alt= "You are seeing a painting of a child in a field with their parents while they walk." 
+            title= ""First Steps by Van Gogh" 
+            width= "400" 
+            height= "300" 
+            />
+               </div> 
+    </main> 
+    <style>.Call{ 
+        text-align: center; 
+        font-family: serif; 
+        color:darkblue; 
+        background-color: pink;
+        width: calc(100%-100px);
+        margin: 10px; 
+        padding: 10px; 
+        align-items: center;}
+        </style> 
+    <style>.About{ 
+            text-align: center; 
+            font-family: serif; 
+            color:darkblue; 
+            background-color:lightgreen;
+            width: calc(100%-100px);
+            margin: 10px; 
+            padding: 10px; 
+            align-items: center;}
+            </style>
+    <style>.Email{ 
+        text-align: center; 
+        font-family: serif; 
+        color:darkblue;
+        background-color:lightgoldenrodyellow;
+            width: calc(100%-100px);
+            margin: 10px; 
+            padding: 10px; 
+            align-items: center}
+        </style> 
+    <style>.Works{ 
+        text-align: center; 
+        font-family: serif; 
+        color:darkblue; 
+        background-color:lightsalmon;
+            width: calc(100%-100px);
+            margin: 10px; 
+            padding: 10px; 
+            align-items: center} 
+        </style>  
+         <style>.container{ 
+            text-align: center; 
+            font-family: serif; 
+            color:brown; 
+            background-color:lightyellow;
+                width: calc(100%-100px);
+                margin: 10px; 
+                padding: 10px; 
+                align-items: center} 
+            </style> 
+      
 </div>
 
     </body>  
